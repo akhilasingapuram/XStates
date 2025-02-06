@@ -98,7 +98,7 @@ const Location = () => {
       >
         <option>Select City</option>
         {cities.map((city) => (
-          <option key={city} value={country}>
+          <option key={city} value={city}>
             {city}
           </option>
         ))}
@@ -108,7 +108,7 @@ const Location = () => {
         <div
           style={{ marginTop: "20px", fontWeight: "bold", fontSize: "20px" }}
         >
-          You selected {selectedCity}, {selectedState}, {selectedCountry}
+          You selected {city}, {state}, {country}
         </div>
       )}
     </div>
