@@ -71,7 +71,9 @@ const Location = () => {
       >
         <option>Select Country</option>
         {countries.map((country) => (
-          <option key={country}>{country}</option>
+          <option key={country} value={country}>
+            {country}
+          </option>
         ))}
       </select>
 
@@ -83,7 +85,9 @@ const Location = () => {
       >
         <option>Select State</option>
         {states.map((state) => (
-          <option key={state}>{state}</option>
+          <option key={state} value={state}>
+            {state}
+          </option>
         ))}
       </select>
       <select
@@ -94,7 +98,9 @@ const Location = () => {
       >
         <option>Select City</option>
         {cities.map((city) => (
-          <option key={city}>{city}</option>
+          <option key={city} value={country}>
+            {city}
+          </option>
         ))}
       </select>
       <br />
