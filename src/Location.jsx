@@ -106,7 +106,7 @@ const Location = () => {
       <br />
       {city !== "" && state !== "" && country !== "" && (
         <p>
-          You selected <strong>{selectedCity}, </strong>
+          You selected <strong>{city}, </strong>
           <span>{state}, </span>
           <span>{country}</span>
         </p>
